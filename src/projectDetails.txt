@@ -1,0 +1,102 @@
+|//\\---------------------------CGVizualizer------------------------------\\//|
+
+A software to perform geometric transformations.
+functions:
+1)taking inputs from the user
+2)printing points on canvas 
+3)selecting Transform features
+4)performing transformations
+
+Main object
+{
+    [Point]
+    {
+        x:----
+        y:----
+    }
+
+    p1---------------------p2
+    |                       |
+    |                       |
+    |                       |
+    |                       |
+    |                       |
+    |                       |
+    p3----------------------p4
+
+
+
+
+}
+
+Transform features:
+1)translate
+{
+    x = x + transformX
+    y = y + transformY
+}
+
+
+2)scale
+{
+    x = x*scaleX
+    y = y*scaleY
+}
+3)shear
+{
+    if 4 points p1 p2 p3 p4
+    p1.x = p1.x + shearX
+    p2.x = p2.x + shearX
+    Or
+    p1.y = p1.y + shearY
+    p2.y = p2.y + shearY
+
+}
+4)reflect
+{
+    along x axis 
+    y = -1 * y
+    along y axis
+    x = -1 * x
+}
+
+5)rotate
+{
+    r angle in radians
+    
+    vx = x*cos(r) - y*sin(r)
+    vy = x*sin(r) + y*cos(r)
+
+    x = vx
+    y = vy
+
+}
+
+Other features:
+displaying coordinates on the display while mouse hovering.
+
+
+Versions
+
+point input format 
+
+version 1:
+4 points 
+
+
+version 1.2:
+design improvements
+
+
+version 2:
+point Array
+
+v2.1
+mobile friendly
+
+version 3:
+pointDisplayOnMouseClick
+
+
+
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cgvV1.2.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+               <h1>CGV</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>DASHBOARD</li>
+                    <li><span>SIGN-IN</span></li>
+                </ul>
+            </div>
+           
+    </nav>
+    </header>
+
+    <div class="Container">
+
+        <div class="inputArea">
+             <div class="basicInfo">
+                <h4>Point</h4>
+                <div class="info">
+                    <h4>i</h4>
+                    <div class="hoverinfo">
+                        Enter the points in this format: X , Y  
+                    </div>
+                    </div>
+                   
+            </div>
+            <div class="pointInput">
+
+           
+            <div class="Input">
+                <div class="i1"><input placeholder="Point1" id="input1" class="input" type="text"></div>
+                <div class="i1"><input  placeholder="Point2" id="input2" class="input" type="text"></div>
+                <div class="i1"><input  placeholder="Point3" id="input3" class="input" type="text"></div>
+                <div class="i1"><input  placeholder="Point4" id="input4" class="input" type="text"></div>
+                
+            </div>
+
+            
+            <button>DRAW</button>
+            </div>
+            <div class="basicInfo transformBasicInfo">
+                <h4>Transform</h4>
+                <div class="info2">
+                    <h4>i</h4>
+                    <div class="hoverinfo2">
+                         Transform inputs should be seperated by a comma  
+                    </div>
+                    </div>
+                   
+            </div>
+            
+
+            <div class="transform">
+                
+                <div class="function function1 ">
+                    <h2>Translate:</h2>
+                    <div class="i2"><input  placeholder="x , y" class="f1" type="text"></div>
+                </div>
+                <div class="function function2 ">
+                    <h2>Scale:</h2>
+                    <div class="i2"><input class="f2"  placeholder="x , y"   type="text"></div>
+                </div>
+                <div class="function function3 ">
+                    <h2>Shear:</h2>
+                    <div class="i2"><input class="f3"   placeholder="x , y" type="text"></div>
+                </div>
+                <div class="function function4 ">
+                    <h2>Reflect:</h2>
+                    <div class="i2"><input class="f4"  placeholder="x , y 1 or 0" type="text"></div>
+                </div>
+                <div class="function function5 ">
+                    <h2>Rotate:</h2>
+                    <div class="i2"><input class="f5"  placeholder="angle deg" type="text"></div>
+                </div>
+                <button>TRANSFORM</button>
+                
+            </div>
+        </div>
+
+        <div id="Canvas">
+            <div class="hover">
+                <div class="X">X: <span>000</span></div>
+                <div class="Y">Y: <span>000</span></div>
+            </div>
+                
+               
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+<!-- JS -->
+<script>
+    const info  = document.querySelector('.info');
+    const info2  = document.querySelector('.info2');
+    const infobox = document.querySelector('.hoverinfo');
+    const infobox2 = document.querySelector('.hoverinfo2');
+info.addEventListener('mouseover',()=>{
+    infobox.style.opacity = '1';
+});
+info.addEventListener('mouseout',()=>{
+    infobox.style.opacity = '0';
+
+});
+
+info2.addEventListener('mouseover',()=>{
+    infobox2.style.opacity = '1';
+});
+info2.addEventListener('mouseout',()=>{
+    infobox2.style.opacity = '0';
+
+});
+
+
+
+</script>
+
+<script src="./p5.min.js"></script>
+
+<script src="./cgvV1.2.js"></script>
+<script src="./points.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
